@@ -35,7 +35,7 @@ module.exports = (env) => {
             rules: [
                 {
                     test: /\.js$/,
-                    loader: "babel-loader"
+                    loader: "babel-loader",
                     options: {
                         plugins: env !== 'production' ? ['react-hot-loader/babel'] : []
                     }
